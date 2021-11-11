@@ -1,0 +1,16 @@
+<h1>Hidden process</h1>
+
+<form (ngSubmit)="caulculateMaxValue()">
+  <input 
+    type="text"
+    name="word"
+    [(ngModel)]="inputWord"
+    autocomplete="no-complete"
+  />
+
+  <button>Get value</button>
+</form>
+
+<div *ngIf="wordValue !== 0">
+  <p>Word value is {{wordValue}}</p>
+</div>
